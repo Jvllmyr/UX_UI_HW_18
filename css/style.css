@@ -92,11 +92,16 @@ hr {
     display: flex;
 }
 
-.socialButtons {
+.socialButtons.vertical {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-right: 25px;
+}
+
+.socialButtons.horizontal {
+    display: flex;
+    justify-content: center;
 }
 
 .heroPortrait img {
@@ -165,7 +170,7 @@ li.skillTitle {
 }
 
 .projectSection {
-    margin-top: 100px;
+    margin: 100px 0;
 }
 
 
@@ -173,7 +178,7 @@ li.skillTitle {
 .projectCCA,
 .projectCCS {
     display: flex;
-    margin: 20px 0;
+    margin: 75px 0;
 }
 
 .projectCCA {
@@ -185,7 +190,11 @@ li.skillTitle {
 .ccsInfo {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 852px;
+}
+
+.caaInfo{
+    text-align: right;
 }
 
 .projectTitle {
@@ -200,6 +209,16 @@ li.skillTitle {
 .ccaDescription,
 .ccsDescription {
     /* display: none; */
+    width: 658px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 225px;
+    float: right;
+    
 }
 
 /* Footer Section */
