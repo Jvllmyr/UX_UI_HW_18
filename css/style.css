@@ -1,0 +1,246 @@
+/* html elements being overwritten */
+
+html {
+    margin-left: 177px;
+    margin-right: 177px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    border-left: 1px solid #000;
+    margin: 0 10px;
+}
+
+.hrLarge {
+    height: 375px;
+}
+
+.hrMedium {
+    height: 265px;
+}
+
+.hrSmall {
+    height: 195px;
+}
+
+/* Header Section */
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    height: 176px;
+    font-size: 23px;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navigationBar {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headerSection li {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Hero Section */
+
+.professionTitle {
+    font-size: 26px;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleAndNameContainer {
+    padding-top: 100px;
+}
+
+.heroName {
+    width: 540px;
+}
+
+.heroAboutMe {
+    width: 575px;
+    font-size: 20px;
+}
+
+.aboutMeAndSocials {
+    display: flex;
+}
+
+.socialsAndPortrait {
+    display: flex;
+}
+
+.socialButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.heroPortrait img {
+    display: inline-block;
+    height: 600px;
+    border-radius: 205px 205px 0px 0px;
+}
+
+/* Body Content */
+
+.sectionTitle {
+    font-size: 26px;
+}
+
+li.skillTitle {
+    font-size: 20px;
+    min-height: 80px;
+    width: 100px;
+}
+
+.skillsList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skillListSkill {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    list-style: none;
+    padding: 20px;
+}
+
+.toolsList {
+    position: absolute;
+    right: 180px;
+    top: 1200px;
+    display: grid;
+    width: 350px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        "toolsSubTitle toolsSubTitle"
+        "toolsCol1 toolsCol2"
+    ;
+}
+
+.toolsSubTitle {
+    grid-area: toolsSubTitle;
+    font-size: 26px;
+    text-align: center;
+}
+
+.toolsCol1 {
+    grid-area: toolsCol1;
+    display: inline-block;
+}
+
+.toolsCol2 {
+    grid-area: toolsCol2;
+}
+
+.toolsCol1 li,
+.toolsCol2 li {
+    line-height: 1.5;
+}
+
+.projectSection {
+    margin-top: 100px;
+}
+
+
+.projectMM,
+.projectCCA,
+.projectCCS {
+    display: flex;
+    margin: 20px 0;
+}
+
+.projectCCA {
+    flex-direction: row-reverse;
+}
+
+.mmInfo,
+.ccaInfo,
+.ccsInfo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.projectTitle {
+    font-size: 22px;
+}
+
+.projectDescription {
+    font-size: 18px;
+}
+
+.mmDescription,
+.ccaDescription,
+.ccsDescription {
+    display: none;
+}
+
+/* Footer Section */
+
+.footerSection {
+    font-size: 23px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 355px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+
+}
+
+.footerSocialButtons {
+    display: flex;
+    align-items: center;
+
+}
+
+.footerLogoAndSocials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNav {
+    margin-right: 150px;
+}
+
+.footerSection li {
+    margin: 25px;
+}
+
+.footerCopywrite {
+    font-size: 13px;
+}
