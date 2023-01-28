@@ -330,3 +330,326 @@ li.skillTitle {
 .footerCopywrite {
     font-size: 13px;
 }
+
+@media only screen and (max-width: 600px) {
+    html {
+        margin: 0 40px;
+        overflow-wrap: break-word;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 15px;
+        overflow-wrap: break-word;
+    }
+
+    .navigationBar {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        line-height: 0;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+
+    .heroSection {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas:
+            "titleAndNameContainer heroPortrait"
+            "heroAboutMe heroAboutMe"
+        ;
+    }
+
+    .titleAndNameContainer {
+        grid-area: titleAndNameContainer;
+    }
+
+    .heroAboutMe {
+        grid-area: heroAboutMe;
+    }
+
+    .aboutMeAndSocials {
+        display: grid;
+    }
+
+
+    .heroPortrait {
+        grid-area: heroPortrait;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    .professionTitle {
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    .heroName {
+        width: 300px;
+    }
+
+    .socialButtons.vertical {
+        display: none;
+    }
+
+    .socialsAndPortrait {
+        justify-content: flex-end;
+    }
+
+    .heroPortrait img {
+        width: 177px;
+        height: auto;
+        border-radius: 205px;
+    }
+
+    /* Skills Section */
+
+    li.skillTitle {
+        font-size: 25px;
+        width: inherit;
+        line-height: 1;
+        min-height: auto;
+        padding-bottom: 5px;
+    }
+
+    .skillsList {
+        grid-area: skillsList;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "userResearch"
+            "qualitativeInterviews"
+            "userEmpathy"
+        ;
+        text-align: center;
+    }
+
+    #userResearch {
+        grid-area: userResearch;
+    }
+
+    #qualitativeInterviews {
+        grid-area: qualitativeInterviews;
+    }
+
+    #userEmpathy {
+        grid-area: userEmpathy;
+    }
+
+    #skillsSection {
+        grid-area: skillsSection;
+    }
+
+    .toolsList {
+        grid-area: toolsList;
+        position: relative;
+        transform: translateX(-50%);
+        top: 0;
+    }
+
+    .skillsSection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "skillsSection"
+            "skillsList"
+        ;
+    }
+
+    .hrSeparator {
+        display: none;
+    }
+
+
+    /* Projects */
+
+    .fullWidth {
+        margin: 0;
+        /* add back negative margin value */
+        padding: 0.25rem;
+    }
+
+    .mmInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "mmTitle"
+        "mmDesc"
+        "mmImages";
+        grid-area: mmPart1;
+    }
+
+    #mmTitle {
+        grid-area: mmTitle;
+    }
+
+    #mmDesc {
+        grid-area: mmDesc;
+    }
+
+    #mmImages {
+        grid-area: mmImages;
+    }
+
+    .mmDescription {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "mmProblem"
+        "mmSolution";
+        grid-area: mmPart2;
+    }
+
+    #mmProblem{
+        grid-area: mmProblem;
+    }
+
+    #mmSolution{
+        grid-area: mmSolution;
+    }
+
+    .projectMM {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "mmPart1"
+        "mmPart2"
+        ;
+    }
+
+
+
+
+    .ccaInfo {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ccaTitle"
+        "ccaDesc"
+        "ccaImages";
+        grid-area: ccaPart1;
+    }
+
+    #ccaTitle {
+        grid-area: ccaTitle;
+    }
+
+    #ccaDesc {
+        grid-area: ccaDesc;
+    }
+
+    #ccaImages {
+        grid-area: ccaImages;
+    }
+
+    .ccaDescription {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ccaProblem"
+        "ccaSolution";
+        grid-area: ccaPart2;
+    }
+
+    #ccaProblem{
+        grid-area: ccaProblem;
+    }
+
+    #ccaSolution{
+        grid-area: ccaSolution;
+    }
+
+    .projectCCA {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ccaPart1"
+        "ccaPart2"
+        ;
+    }
+
+
+
+
+    .ccsInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ccsTitle"
+        "ccsDesc"
+        "ccsImages";
+        grid-area: ccsPart1;
+    }
+
+    #ccsTitle {
+        grid-area: ccsTitle;
+    }
+
+    #ccsDesc {
+        grid-area: ccsDesc;
+    }
+
+    #ccsImages {
+        grid-area: ccsImages;
+    }
+
+    .ccsDescription {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ccsProblem"
+        "ccsSolution";
+        grid-area: ccsPart2;
+    }
+
+    #ccsProblem{
+        grid-area: ccsProblem;
+    }
+
+    #ccsSolution{
+        grid-area: ccsSolution;
+    }
+
+    .projectCCS {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "ccsPart1"
+        "ccsPart2"
+        ;
+    }
+
+
+    /* Footer Area */
+
+    .contactTitle {
+        font-size: 30px;
+    }
+
+    .contactInfo {
+        width: 250px;
+        transform: translateX(-50%);
+        margin-bottom: 25px;
+    }
+}
