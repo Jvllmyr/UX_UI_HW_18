@@ -3,17 +3,55 @@
 html {
     margin-left: 177px;
     margin-right: 177px;
+    font-family: 'Anek Bangla';
+}
+
+p {
+    color: #525252;
+    line-height: 36.09px;
+}
+
+.fullWidth {
+    background-color: #f4f4f4;
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Anybody';
 }
 
 h1 {
     font-size: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0;
     margin-bottom: 25px;
 }
 
+h2 {
+    font-size: 66px;
+}
+
 ul {
     list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 hr {
@@ -101,7 +139,6 @@ hr {
 
 .socialButtons.horizontal {
     display: flex;
-    justify-content: center;
 }
 
 .heroPortrait img {
@@ -117,9 +154,12 @@ hr {
 }
 
 li.skillTitle {
-    font-size: 20px;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 38.03px;
     min-height: 80px;
     width: 100px;
+    padding-bottom: 29px;
 }
 
 .skillsList {
@@ -138,7 +178,7 @@ li.skillTitle {
 .toolsList {
     position: absolute;
     right: 180px;
-    top: 1200px;
+    top: 1355px;
     display: grid;
     width: 350px;
     grid-template-columns: 50% 50%;
@@ -151,8 +191,10 @@ li.skillTitle {
 
 .toolsSubTitle {
     grid-area: toolsSubTitle;
-    font-size: 26px;
+    font-size: 42px;
+    font-weight: 400;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .toolsCol1 {
@@ -166,11 +208,13 @@ li.skillTitle {
 
 .toolsCol1 li,
 .toolsCol2 li {
-    line-height: 1.5;
+    line-height: 30px;
+    font-size: 20;
+    font-weight: 300;
 }
 
 .projectSection {
-    margin: 100px 0;
+    margin-top: 100px;
 }
 
 
@@ -193,16 +237,23 @@ li.skillTitle {
     width: 852px;
 }
 
-.ccaInfo{
+.ccaInfo {
     text-align: right;
 }
 
 .projectTitle {
-    font-size: 22px;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .projectDescription {
-    font-size: 18px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.projectDescriptionTitle {
+    font-weight: bold;
 }
 
 .mmDescription,
@@ -213,12 +264,28 @@ li.skillTitle {
 }
 
 .contactInfo {
+    position: relative;
+    right: -50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 225px;
-    float: right;
-    
+    width: 375px;
+    margin-bottom: 100px;
+}
+
+.contactTitle {
+    font-size: 45px;
+}
+
+.contactInfo .socialButtons .emailButton,
+.contactInfo .socialButtons .linkedInButton,
+.contactInfo .socialButtons .phoneButton {
+    padding: 0 30px;
+}
+
+.contactInfo .socialButtons .phoneButton {
+    position: relative;
+    top: 10px;
+    zoom: 0.8;
 }
 
 /* Footer Section */
@@ -253,7 +320,7 @@ li.skillTitle {
 }
 
 .footerNav {
-    margin-right: 150px;
+    line-height: 1;
 }
 
 .footerSection li {
