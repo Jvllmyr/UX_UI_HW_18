@@ -13,9 +13,9 @@ p {
 
 .fullWidth {
     background-color: #f4f4f4;
-    margin: 0 -9999rem;
-    /* add back negative margin value */
-    padding: 0.25rem 9999rem;
+    box-shadow: 0 0 0 100vmax #f4f4f4;
+    clip-path: inset(0 -100vmax);
+    padding-top: 100px;
 }
 
 h1,
@@ -215,13 +215,25 @@ li.skillTitle {
 
 .projectSection {
     margin-top: 100px;
+
 }
 
+#projectSectionTitle {
+    margin: 0;
+    padding: 1px;
+    background-color: #CCE162;
+    box-shadow: 0 0 0 100vmax #CCE162;
+    clip-path: inset(0 -100vmax);
+}
 
 .projectMM,
 .projectCCA,
 .projectCCS {
     display: flex;
+}
+
+.projectCCA,
+.projectCCS {
     margin: 75px 0;
 }
 
@@ -474,20 +486,22 @@ li.skillTitle {
 
     /* Projects */
 
-    .fullWidth {
+    /* .fullWidth {
         margin: 0;
-        /* add back negative margin value */
         padding: 0.25rem;
-    }
+        box-shadow: 0 0 0 100vmax #f4f4f4;
+        clip-path: inset(0 -100vmax);
+        padding-top: 100px;
+    } */
 
     .mmInfo {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "mmTitle"
-        "mmDesc"
-        "mmImages";
+        grid-template-areas:
+            "mmTitle"
+            "mmDesc"
+            "mmImages";
         grid-area: mmPart1;
     }
 
@@ -507,17 +521,17 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "mmProblem"
-        "mmSolution";
+        grid-template-areas:
+            "mmProblem"
+            "mmSolution";
         grid-area: mmPart2;
     }
 
-    #mmProblem{
+    #mmProblem {
         grid-area: mmProblem;
     }
 
-    #mmSolution{
+    #mmSolution {
         grid-area: mmSolution;
     }
 
@@ -525,9 +539,9 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "mmPart1"
-        "mmPart2"
+        grid-template-areas:
+            "mmPart1"
+            "mmPart2"
         ;
     }
 
@@ -539,10 +553,10 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "ccaTitle"
-        "ccaDesc"
-        "ccaImages";
+        grid-template-areas:
+            "ccaTitle"
+            "ccaDesc"
+            "ccaImages";
         grid-area: ccaPart1;
     }
 
@@ -562,17 +576,17 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "ccaProblem"
-        "ccaSolution";
+        grid-template-areas:
+            "ccaProblem"
+            "ccaSolution";
         grid-area: ccaPart2;
     }
 
-    #ccaProblem{
+    #ccaProblem {
         grid-area: ccaProblem;
     }
 
-    #ccaSolution{
+    #ccaSolution {
         grid-area: ccaSolution;
     }
 
@@ -580,9 +594,9 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "ccaPart1"
-        "ccaPart2"
+        grid-template-areas:
+            "ccaPart1"
+            "ccaPart2"
         ;
     }
 
@@ -593,10 +607,10 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "ccsTitle"
-        "ccsDesc"
-        "ccsImages";
+        grid-template-areas:
+            "ccsTitle"
+            "ccsDesc"
+            "ccsImages";
         grid-area: ccsPart1;
     }
 
@@ -616,17 +630,17 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "ccsProblem"
-        "ccsSolution";
+        grid-template-areas:
+            "ccsProblem"
+            "ccsSolution";
         grid-area: ccsPart2;
     }
 
-    #ccsProblem{
+    #ccsProblem {
         grid-area: ccsProblem;
     }
 
-    #ccsSolution{
+    #ccsSolution {
         grid-area: ccsSolution;
     }
 
@@ -634,9 +648,9 @@ li.skillTitle {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "ccsPart1"
-        "ccsPart2"
+        grid-template-areas:
+            "ccsPart1"
+            "ccsPart2"
         ;
     }
 
