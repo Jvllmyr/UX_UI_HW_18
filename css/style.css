@@ -281,7 +281,7 @@ li.skillTitle {
     display: flex;
     flex-direction: column;
     width: 375px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .contactTitle {
@@ -360,6 +360,7 @@ li.skillTitle {
     p {
         font-size: 15px;
         overflow-wrap: break-word;
+        line-height: 1.5;
     }
 
     .navigationBar {
@@ -374,12 +375,13 @@ li.skillTitle {
 
     .heroSection {
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 30% 70%;
+        grid-template-columns: 80% 20%;
+        /* grid-template-rows: 30% 70%; */
         grid-template-areas:
             "titleAndNameContainer heroPortrait"
             "heroAboutMe heroAboutMe"
         ;
+
     }
 
     .titleAndNameContainer {
@@ -388,6 +390,7 @@ li.skillTitle {
 
     .heroAboutMe {
         grid-area: heroAboutMe;
+        width: 120%;
     }
 
     .aboutMeAndSocials {
@@ -493,6 +496,18 @@ li.skillTitle {
         clip-path: inset(0 -100vmax);
         padding-top: 100px;
     } */
+
+    .mmInfo,
+    .ccaInfo,
+    .ccsInfo {
+        width: 100%;
+    }
+
+    .mmDescription,
+    .ccaDescription,
+    .ccsDescription {
+        width: auto;
+    }
 
     .mmInfo {
         display: grid;
